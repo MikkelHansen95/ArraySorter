@@ -5,8 +5,7 @@
  */
 package com.mycompany.arraysorter;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
 import java.util.Comparator;
 
 /**
@@ -16,20 +15,23 @@ import java.util.Comparator;
  */
 public class ArraySorter<T>{
     
+    
      T[] array;
+
      
     public ArraySorter(T[] items, int size) {
         array = items;
     
     }
+
     
     public void enqueue(T item) {
-        array.add(item);
+        
     }
     
     public T dequeue() {
-        T item = array.remove(0);
-        return item;
+        
+        return null;
     };
     
     public void sortAscending(){
@@ -43,5 +45,12 @@ public class ArraySorter<T>{
     public void sort(Comparator<T> comparator){
         
     }
+
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
     
 }
